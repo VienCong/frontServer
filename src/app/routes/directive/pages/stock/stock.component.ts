@@ -21,6 +21,6 @@ export class StockComponent implements OnInit {
         this.directiveService.getDetail({}, res => {
             console.log(res, 'node返回数据');
         });
-        console.log('天使');
+        console.log('五月天-天使');
     }
 }
