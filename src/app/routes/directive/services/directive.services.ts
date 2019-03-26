@@ -9,7 +9,11 @@ export class DirectiveService {
         public http: HttpUtil,
     ) { }
 
-    getDetail(param, callback) {
+    getStock(param, callback) {
         return this.http.post('directive/stock', param, callback);
+    }
+
+    getOrganization(param, callback) {
+        return this.http.post('organization/group', param, callback);
     }
 }

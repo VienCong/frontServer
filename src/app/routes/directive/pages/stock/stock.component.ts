@@ -17,10 +17,17 @@ export class StockComponent implements OnInit {
 
     }
 
-    getDetail() {
-        this.directiveService.getDetail({}, res => {
-            console.log(res, 'node返回数据');
+    getStockDetail() {
+        this.directiveService.getStock({}, res => {
+            console.log(res, 'stock返回数据');
         });
-        console.log('五月天-天使');
+        console.log('Stock-天使');
+    }
+
+    getOrgDetail() {
+        this.directiveService.getOrganization({}, res => {
+            console.log(res, 'org返回数据');
+        });
+        console.log('Org-天使');
     }
 }
